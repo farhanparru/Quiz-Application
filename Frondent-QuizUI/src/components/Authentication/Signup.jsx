@@ -1,133 +1,76 @@
-import { useState } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import { FaUser, FaLock, FaEnvelope,FaUserPlus } from 'react-icons/fa';
 
-const QuizSignupPage = () => {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-  });
-  const [showPassword, setShowPassword] = useState(false);
-  const [errors, setErrors] = useState({});
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const validateForm = () => {
-    let newErrors = {};
-    if (!formData.fullName.trim()) newErrors.fullName = "Full Name is required";
-    if (!formData.email.trim()) newErrors.email = "Email is required";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
-      newErrors.email = "Invalid email format";
-    if (formData.password.length < 6)
-      newErrors.password = "Password must be at least 6 characters";
-    if (formData.password !== formData.confirmPassword)
-      newErrors.confirmPassword = "Passwords do not match";
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validateForm()) {
-      alert("Sign-up successful!");
-      // You can call your API here
-      console.log("Form Data: ", formData);
-    }
-  };
-
+const Signup = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-300 to-indigo-400 p-4">
-      <div className="max-w-md w-full bg-white p-8 rounded-xl shadow-xl">
-        <h2 className="text-3xl font-bold text-gray-800 text-center mb-6">Quiz Application - Sign Up</h2>
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div>
-            <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">Full Name</label>
-            <input
-              id="fullName"
-              name="fullName"
-              type="text"
-              value={formData.fullName}
-              onChange={handleChange}
-              placeholder="Enter your full name"
-              className="mt-1 w-full p-3 border rounded-lg focus:ring-2 focus:ring-indigo-500"
-            />
-            {errors.fullName && <p className="text-red-600 text-sm mt-1">{errors.fullName}</p>}
+    <div className="flex flex-col lg:flex-row h-screen bg-gradient-to-r from-teal-900 to-teal-500">
+      {/* Left Section */}
+      <div className="w-full lg:w-1/2 flex flex-col items-center justify-center text-white p-8">
+        <div className="mb-8">
+          <div className="w-24 h-24 rounded-full border-4 border-white flex items-center justify-center">
+            <FaUserPlus className="text-white text-6xl" />
           </div>
+        </div>
+        <h1 className="text-4xl lg:text-5xl font-bold mb-6">LOGO</h1>
+        <p className="max-w-md text-center leading-relaxed">
+          Create an account and join our community today. Enjoy exclusive features and benefits with just a few clicks.
+        </p>
+      </div>
 
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter your email"
-              className="mt-1 w-full p-3 border rounded-lg focus:ring-2 focus:ring-indigo-500"
-            />
-            {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email}</p>}
-          </div>
-
-          <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
-            <div className="relative">
+      {/* Right Section - Signup Form */}
+      <div className="w-full lg:w-1/2 flex items-center justify-center p-4">
+        <div className="bg-white p-8 lg:p-10 rounded-3xl shadow-xl w-full max-w-md">
+          <h2 className="text-3xl font-semibold text-teal-600 mb-8 text-center">Sign Up</h2>
+          <div className="space-y-6">
+            <div className="flex items-center border-2 rounded-md p-2">
+              <FaUser className="text-teal-600 mr-3" />
               <input
-                id="password"
-                name="password"
-                type={showPassword ? "text" : "password"}
-                value={formData.password}
-                onChange={handleChange}
-                placeholder="Create a password"
-                className="mt-1 w-full p-3 border rounded-lg focus:ring-2 focus:ring-indigo-500"
+                type="text"
+                placeholder="Full Name"
+                className="w-full outline-none"
               />
-              <button
-                type="button"
-                onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-4"
-              >
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
-              </button>
             </div>
-            {errors.password && <p className="text-red-600 text-sm mt-1">{errors.password}</p>}
-          </div>
 
-          <div>
-            <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700">Confirm Password</label>
-            <div className="relative">
+            <div className="flex items-center border-2 rounded-md p-2">
+              <FaEnvelope className="text-teal-600 mr-3" />
               <input
-                id="confirmPassword"
-                name="confirmPassword"
-                type={showPassword ? "text" : "password"}
-                value={formData.confirmPassword}
-                onChange={handleChange}
-                placeholder="Confirm your password"
-                className="mt-1 w-full p-3 border rounded-lg focus:ring-2 focus:ring-indigo-500"
+                type="email"
+                placeholder="Email Address"
+                className="w-full outline-none"
               />
-              <button
-                type="button"
-                onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-4"
-              >
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
-              </button>
             </div>
-            {errors.confirmPassword && <p className="text-red-600 text-sm mt-1">{errors.confirmPassword}</p>}
-          </div>
 
-          <button
-            type="submit"
-            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white p-3 rounded-lg font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          >
-            Sign Up
-          </button>
-        </form>
+            <div className="flex items-center border-2 rounded-md p-2">
+              <FaLock className="text-teal-600 mr-3" />
+              <input
+                type="password"
+                placeholder="Password"
+                className="w-full outline-none"
+              />
+            </div>
+
+            <div className="flex items-center border-2 rounded-md p-2">
+              <FaLock className="text-teal-600 mr-3" />
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                className="w-full outline-none"
+              />
+            </div>
+
+            <button className="w-full bg-teal-600 text-white py-2 rounded-md hover:bg-teal-700 transition">
+              SIGN UP
+            </button>
+
+            <p className="text-center text-sm mt-4">
+              Already have an account? <a href="/Login" className="text-teal-600 hover:underline">Login here</a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default QuizSignupPage;
+export default Signup;
