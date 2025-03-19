@@ -5,6 +5,9 @@ import Home from './components/Home';
 import Quizinstrection from './components/Quiz/Quizinstrection';
 import LoginPage from './components/Authentication/Login';
 import Signup from './components/Authentication/Signup'
+import Normal from './components/Quiz/NormalquizInstrecti'
+import NormalQuiz from './components/Authentication/NormalLogin'
+import NormalQuizSignup from './components/Authentication/NormalSignup'
 
 
 function App() {
@@ -12,8 +15,11 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/play/Instruction" element={<Quizinstrection/>}/>
+        <Route path="/play/CashPrize/Instruction" element={<Quizinstrection/>}/>
+        <Route path='/play/NormalQuiz/Instruction' element={<Normal/>}/>
         <Route path='/Login' element={<LoginPage/>}/>
+        <Route path='/NormalQuizlogin' element={<NormalQuiz/>}/>
+        <Route path='/Normalsign' element={<NormalQuizSignup/>} />
         <Route path='/Signup' element={<Signup/>}/>
       </Routes>    
     </Router>

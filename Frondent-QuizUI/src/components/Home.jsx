@@ -33,19 +33,16 @@ const Home = () => {
           <p className="text-black text-lg md:text-xl mb-8 font-semibold">Play and Win Exciting Cash Prizes! 💸</p>
 
           <div className="space-y-4 md:space-y-6">
-            <button className="w-full neon-button bg-green-500 py-3 rounded-xl text-lg md:text-xl font-bold shadow-lg hover:scale-105 transition-all duration-300" onClick={() => navigate('/play/Instruction')}>
-              🎮 Play Now
+            <button className="w-full neon-button bg-green-500 py-3 rounded-xl text-lg md:text-xl font-bold shadow-lg hover:scale-105 transition-all duration-300" onClick={() => navigate('/Signup')}>
+              💰 Cash Prize Quiz
             </button>
 
-            <div className="flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="w-full sm:w-1/2 neon-button bg-red-500 py-3 rounded-xl text-lg font-bold shadow-lg hover:scale-105 transition-all duration-300" onClick={() => navigate('/Login')}>
-                🔑 Login
-              </button>
-              <button className="w-full sm:w-1/2 neon-button bg-blue-500 py-3 rounded-xl text-lg font-bold shadow-lg hover:scale-105 transition-all duration-300" onClick={() => navigate('/Signup')}>
-                📝 Signup
-              </button>
-            </div>
+            <button className="w-full neon-button bg-purple-500 py-3 rounded-xl text-lg md:text-xl font-bold shadow-lg hover:scale-105 transition-all duration-300" onClick={() => navigate('/Normalsign')}>
+              📚 Normal Quiz
+            </button>
           </div>
+
+          <p className="text-black text-sm mt-8">Complete the registration process to start your quiz journey and play more!</p>
         </div>
       </div>
 
