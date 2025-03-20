@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { FaMoneyBillWave, FaClock, FaCheckCircle, FaGift } from 'react-icons/fa';
+import { FaMoneyBillWave, FaClock, FaCheckCircle, FaGift, FaTrophy, FaExclamationCircle } from 'react-icons/fa';
 
 function CashPrizeQuizInstruction() {
   return (
@@ -42,6 +42,20 @@ function CashPrizeQuizInstruction() {
               <FaGift className="text-yellow-600 text-3xl" />
               <span className="text-lg text-gray-800">
                 Top scorers receive <strong>exclusive bonuses!</strong>
+              </span>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <FaTrophy className="text-yellow-600 text-3xl" />
+              <span className="text-lg text-gray-800">
+                1st Prize: <strong>₹3000</strong>, 2nd Prize: <strong>₹2000</strong>, 3rd Prize: <strong>₹1000</strong>.
+              </span>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <FaExclamationCircle className="text-red-600 text-3xl" />
+              <span className="text-lg text-gray-800">
+                Entry fee is <strong>non-refundable</strong>.
               </span>
             </div>
           </div>

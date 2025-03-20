@@ -1,8 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { FaUser, FaLock, FaEnvelope,FaUserPlus } from 'react-icons/fa';
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+
+ const navigate = useNavigate()
+
   return (
     <div className="flex flex-col lg:flex-row h-screen bg-gradient-to-r from-teal-900 to-teal-500">
       {/* Left Section */}
@@ -59,7 +63,8 @@ const Signup = () => {
               />
             </div>
 
-            <button className="w-full bg-teal-600 text-white py-2 rounded-md hover:bg-teal-700 transition">
+            <button className="w-full bg-teal-600 text-white py-2 rounded-md hover:bg-teal-700 transition" 
+             onClick={() => navigate('/Payment/cash')}>
               SIGN UP
             </button>
 

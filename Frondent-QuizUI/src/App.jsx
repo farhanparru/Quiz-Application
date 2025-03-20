@@ -8,6 +8,8 @@ import Signup from './components/Authentication/Signup'
 import Normal from './components/Quiz/NormalquizInstrecti'
 import NormalQuiz from './components/Authentication/NormalLogin'
 import NormalQuizSignup from './components/Authentication/NormalSignup'
+import QuizPaymnet from './components/payment/QuizPaymnet';
+import Question from './components/Questions/Question';
 
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
         <Route path='/play/NormalQuiz/Instruction' element={<Normal/>}/>
         <Route path='/Login' element={<LoginPage/>}/>
         <Route path='/NormalQuizlogin' element={<NormalQuiz/>}/>
+        <Route path='/Payment/cash' element={<QuizPaymnet/>}/>
         <Route path='/Normalsign' element={<NormalQuizSignup/>} />
+        <Route path='/QuestionPage' element={<Question/>}/>
         <Route path='/Signup' element={<Signup/>}/>
       </Routes>    
     </Router>

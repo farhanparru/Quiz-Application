@@ -1,8 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { FaClock, FaQuestionCircle, FaLightbulb, FaSmile } from 'react-icons/fa';
+import { useNavigate } from "react-router-dom";
 
 function NormalQuizInstruction() {
+
+ const navigate = useNavigate()
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-teal-900 to-teal-500 flex items-center justify-center p-4">
       <div className="max-w-3xl w-full bg-white shadow-xl rounded-2xl p-8">
@@ -37,7 +41,8 @@ function NormalQuizInstruction() {
           </ul>
 
           <div className="mt-8 text-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-lg transition duration-300">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-lg transition duration-300"
+               onClick={() => navigate('/QuestionPage')}>
               Start Normal Quiz
             </button>
           </div>
