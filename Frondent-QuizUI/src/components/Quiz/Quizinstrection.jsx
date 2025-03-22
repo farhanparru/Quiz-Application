@@ -1,8 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { FaMoneyBillWave, FaClock, FaCheckCircle, FaGift, FaTrophy, FaExclamationCircle } from 'react-icons/fa';
+import { useNavigate } from "react-router-dom";
 
 function CashPrizeQuizInstruction() {
+
+  const navigate = useNavigate()
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-teal-900 to-teal-500 flex items-center justify-center p-4">
       <div className="max-w-4xl w-full bg-white shadow-2xl rounded-2xl p-8">
@@ -61,7 +65,7 @@ function CashPrizeQuizInstruction() {
           </div>
 
           <div className="mt-10 text-center">
-            <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg transition-transform transform hover:scale-105">
+            <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg transition-transform transform hover:scale-105"     onClick={() => navigate('/CashQueston')}>
               🚀 Start Cash Prize Quiz
             </button>
 

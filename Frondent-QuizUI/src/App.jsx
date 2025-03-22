@@ -10,11 +10,14 @@ import NormalQuiz from './components/Authentication/NormalLogin'
 import NormalQuizSignup from './components/Authentication/NormalSignup'
 import QuizPaymnet from './components/payment/QuizPaymnet';
 import Question from './components/Questions/Question';
+import QuestonCash from  './components/Questions/QuestonCash'
+import Navbar from './components/Questions/Navabar';
 
 
 function App() {
   return (
     <Router>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/play/CashPrize/Instruction" element={<Quizinstrection/>}/>
@@ -24,6 +27,7 @@ function App() {
         <Route path='/Payment/cash' element={<QuizPaymnet/>}/>
         <Route path='/Normalsign' element={<NormalQuizSignup/>} />
         <Route path='/QuestionPage' element={<Question/>}/>
+        <Route path='/CashQueston' element={<QuestonCash/>}/>
         <Route path='/Signup' element={<Signup/>}/>
       </Routes>    
     </Router>

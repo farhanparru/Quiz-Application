@@ -1,0 +1,128 @@
+[
+    {
+      "question": "What does HTML stand for?",
+      "options": ["A: HyperText Markup Language", "B: HighText Machine Language", "C: HyperTransfer Markup Language", "D: HyperText Machine Language"],
+      "correctAnswer": "A: HyperText Markup Language"
+    },
+    {
+      "question": "Which programming language is known as the backbone of web development?",
+      "options": ["A: Python", "B: JavaScript", "C: Java", "D: C++"],
+      "correctAnswer": "B: JavaScript"
+    },
+    {
+      "question": "Who is known as the father of computers?",
+      "options": ["A: Alan Turing", "B: Charles Babbage", "C: Bill Gates", "D: Steve Jobs"],
+      "correctAnswer": "B: Charles Babbage"
+    },
+    {
+      "question": "Which company developed the Android operating system?",
+      "options": ["A: Microsoft", "B: Apple", "C: Google", "D: Samsung"],
+      "correctAnswer": "C: Google"
+    },
+    {
+      "question": "What does CPU stand for?",
+      "options": ["A: Central Processing Unit", "B: Computer Personal Unit", "C: Central Processor Unit", "D: Central Power Unit"],
+      "correctAnswer": "A: Central Processing Unit"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["A: Earth", "B: Venus", "C: Mars", "D: Jupiter"],
+      "correctAnswer": "C: Mars"
+    },
+    {
+      "question": "Which country is the largest by land area?",
+      "options": ["A: Canada", "B: United States", "C: China", "D: Russia"],
+      "correctAnswer": "D: Russia"
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "options": ["A: Seoul", "B: Beijing", "C: Tokyo", "D: Bangkok"],
+      "correctAnswer": "C: Tokyo"
+    },
+    {
+      "question": "Which ocean is the largest?",
+      "options": ["A: Atlantic Ocean", "B: Indian Ocean", "C: Pacific Ocean", "D: Arctic Ocean"],
+      "correctAnswer": "C: Pacific Ocean"
+    },
+    {
+      "question": "In which year did the Titanic sink?",
+      "options": ["A: 1912", "B: 1905", "C: 1920", "D: 1898"],
+      "correctAnswer": "A: 1912"
+    },
+    {
+      "question": "What is the smallest unit of memory in a computer?",
+      "options": ["A: Byte", "B: Bit", "C: Kilobyte", "D: Megabyte"],
+      "correctAnswer": "B: Bit"
+    },
+    {
+      "question": "Which famous scientist proposed the theory of relativity?",
+      "options": ["A: Isaac Newton", "B: Nikola Tesla", "C: Albert Einstein", "D: Galileo Galilei"],
+      "correctAnswer": "C: Albert Einstein"
+    },
+    {
+      "question": "Which is the tallest mountain in the world?",
+      "options": ["A: K2", "B: Mount Everest", "C: Mount Kilimanjaro", "D: Mount Elbrus"],
+      "correctAnswer": "B: Mount Everest"
+    },
+    {
+      "question": "Which programming language is primarily used for artificial intelligence?",
+      "options": ["A: Python", "B: Java", "C: C#", "D: Ruby"],
+      "correctAnswer": "A: Python"
+    },
+    {
+      "question": "Which country won the FIFA World Cup in 2018?",
+      "options": ["A: Germany", "B: Argentina", "C: France", "D: Brazil"],
+      "correctAnswer": "C: France"
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "options": ["A: Go", "B: Au", "C: Ag", "D: Gd"],
+      "correctAnswer": "B: Au"
+    },
+    {
+      "question": "Which social media platform was founded by Mark Zuckerberg?",
+      "options": ["A: Twitter", "B: Instagram", "C: Facebook", "D: LinkedIn"],
+      "correctAnswer": "C: Facebook"
+    },
+    {
+      "question": "Which continent has the most countries?",
+      "options": ["A: Asia", "B: Africa", "C: Europe", "D: South America"],
+      "correctAnswer": "B: Africa"
+    },
+    {
+      "question": "Which gas do plants absorb from the atmosphere?",
+      "options": ["A: Oxygen", "B: Nitrogen", "C: Carbon Dioxide", "D: Hydrogen"],
+      "correctAnswer": "C: Carbon Dioxide"
+    },
+    {
+      "question": "Which is the longest river in the world?",
+      "options": ["A: Amazon River", "B: Yangtze River", "C: Nile River", "D: Mississippi River"],
+      "correctAnswer": "C: Nile River"
+    },
+    {
+      "question": "Which tech company is known for its iPhone?",
+      "options": ["A: Samsung", "B: Microsoft", "C: Apple", "D: Google"],
+      "correctAnswer": "C: Apple"
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "options": ["A: Vincent van Gogh", "B: Pablo Picasso", "C: Michelangelo", "D: Leonardo da Vinci"],
+      "correctAnswer": "D: Leonardo da Vinci"
+    },
+    {
+      "question": "Which U.S. state is known as the Sunshine State?",
+      "options": ["A: California", "B: Texas", "C: Florida", "D: Hawaii"],
+      "correctAnswer": "C: Florida"
+    },
+    {
+      "question": "Which country is famous for the Great Wall?",
+      "options": ["A: Japan", "B: China", "C: India", "D: Korea"],
+      "correctAnswer": "B: China"
+    },
+    {
+      "question": "What does RAM stand for?",
+      "options": ["A: Read Access Memory", "B: Random Access Memory", "C: Run Access Memory", "D: Real-time Access Memory"],
+      "correctAnswer": "B: Random Access Memory"
+    }
+  ]
+  

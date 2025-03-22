@@ -1,23 +1,13 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import {  FaArrowRight } from 'react-icons/fa';
-import correctSound from '../../assets/tunetank.com_correct-answer-bells.wav';
-import wrongSound from '../../assets/wrong-answer-21-199825.mp3';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { FaArrowRight ,FaArrowLeft} from "react-icons/fa";
+import correctSound from "../../assets/tunetank.com_correct-answer-bells.wav";
+import wrongSound from "../../assets/wrong-answer-21-199825.mp3";
+import questionsData from "../../DummayQuestions/Cashprize.json";
 
 const Question = () => {
-  const questions = [
-    {
-      question: "What has to be broken before you can use it?",
-      options: ["A: Glass", "B: Code", "C: Egg", "D: Promise"],
-      correctAnswer: "C: Egg",
-    },
-    {
-      question: "I speak without a mouth and hear without ears. What am I?",
-      options: ["A: Echo", "B: Shadow", "C: Dream", "D: Mirror"],
-      correctAnswer: "A: Echo",
-    },
-  ];
+  const questions = questionsData;
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selected, setSelected] = useState(null);
@@ -47,6 +37,14 @@ const Question = () => {
     setCurrentQuestionIndex((prevIndex) => (prevIndex + 1) % questions.length);
   };
 
+  const handlePrevQuestion = () => {
+    if (currentQuestionIndex > 0) {
+      setSelected(null);
+      setTimeLeft(60);
+      setCurrentQuestionIndex((prevIndex) => prevIndex - 1);
+    }
+  };
+
   const emojis = ["😀", "😊", "😐", "😟", "😱", "🔥"];
   const currentEmoji = emojis[Math.floor(timeLeft / 10)];
 
@@ -59,7 +57,26 @@ const Question = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-blue-900 to-black text-white">
+      {/* Navigation Buttons */}
+      <div className="flex justify-end p-4 space-x-4">
+        <button
+          onClick={handlePrevQuestion}
+          disabled={currentQuestionIndex === 0}
+          className="flex items-center space-x-2 text-yellow-500 hover:text-yellow-300 text-xl disabled:opacity-50"
+        >
+          <FaArrowLeft size={24} />
+          <span>Back Question</span>
+        </button>
 
+        <button
+          onClick={handleNextQuestion}
+          disabled={currentQuestionIndex === questions.length - 1}
+          className="flex items-center space-x-2 text-yellow-500 hover:text-yellow-300 text-xl disabled:opacity-50"
+        >
+          <span>Next Question ({currentQuestionIndex + 1}/{questions.length})</span>
+          <FaArrowRight size={24} />
+        </button>
+      </div>
       {/* Quiz Content */}
       <div className="flex-grow flex items-center justify-center">
         <div className="max-w-4xl w-full p-6 rounded-3xl border-4 border-yellow-500 shadow-lg">
@@ -69,7 +86,7 @@ const Question = () => {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            🎯 Funny Quiz Time!
+            💰 Win Cash Prizes! 💰
           </motion.h1>
 
           <motion.div
@@ -81,10 +98,7 @@ const Question = () => {
             {currentEmoji} {timeLeft}s
           </motion.div>
 
-          <div
-            className="p-6 mb-8 border-4 border-yellow-500 rounded-xl text-center text-2xl"
-           
-          >
+          <div className="p-6 mb-8 border-4 border-yellow-500 rounded-xl text-center text-2xl">
             {questions[currentQuestionIndex].question}
           </div>
 
@@ -92,7 +106,6 @@ const Question = () => {
             {questions[currentQuestionIndex].options.map((option, index) => (
               <motion.button
                 key={index}
-             
                 onClick={() => handleAnswerClick(option)}
                 className={`p-4 border-4 rounded-xl text-xl transition-all bg-black hover:bg-yellow-500 hover:text-black ${
                   selected === option
@@ -109,16 +122,7 @@ const Question = () => {
         </div>
       </div>
 
-      {/* Next Question Button */}
-      <div className="flex justify-center p-4">
-        <button
-          onClick={handleNextQuestion}
-          className="flex items-center space-x-2 text-yellow-500 hover:text-yellow-300 text-xl"
-        >
-          <span>Next Question</span>
-          <FaArrowRight size={24} />
-        </button>
-      </div>
+    
     </div>
   );
 };
