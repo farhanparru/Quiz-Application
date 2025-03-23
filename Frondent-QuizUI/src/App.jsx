@@ -12,7 +12,7 @@ import QuizPaymnet from './components/payment/QuizPaymnet';
 import Question from './components/Questions/Question';
 import QuestonCash from  './components/Questions/QuestonCash'
 import Navbar from './components/Questions/Navabar';
-
+import Techniqal from './components/Techniqalsupport/Support'
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
         <Route path="/play/CashPrize/Instruction" element={<Quizinstrection/>}/>
         <Route path='/play/NormalQuiz/Instruction' element={<Normal/>}/>
         <Route path='/Login' element={<LoginPage/>}/>
+        <Route path='/techniqalSupport' element={<Techniqal/>}/>
         <Route path='/NormalQuizlogin' element={<NormalQuiz/>}/>
         <Route path='/Payment/cash' element={<QuizPaymnet/>}/>
         <Route path='/Normalsign' element={<NormalQuizSignup/>} />

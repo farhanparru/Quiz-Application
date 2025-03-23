@@ -27,23 +27,24 @@ const Question = () => {
     if (selected) return;
     setSelected(option);
     option === questions[currentQuestionIndex].correctAnswer
-      ? playCorrectSound()
-      : playWrongSound();
+      ? playCorrectSound() : playWrongSound();
   };
 
   const handleNextQuestion = () => {
-    setSelected(null);
-    setTimeLeft(60);
-    setCurrentQuestionIndex((prevIndex) => (prevIndex + 1) % questions.length);
+    setSelected(null); // Reset the selected answer to null (no answer selected).
+    setTimeLeft(60); // Reset the timer to 60 seconds.
+    setCurrentQuestionIndex((prevIndex) => (prevIndex + 1) % questions.length); // Move to the next question.
   };
 
-  const handlePrevQuestion = () => {
-    if (currentQuestionIndex > 0) {
-      setSelected(null);
-      setTimeLeft(60);
-      setCurrentQuestionIndex((prevIndex) => prevIndex - 1);
-    }
-  };
+
+const handlePrevQuestion = () => {
+  if (currentQuestionIndex > 0) { // Check if the current question is not the first one.
+    setSelected(null); // Reset the selected answer to null.
+    setTimeLeft(60); // Reset the timer to 60 seconds.
+    setCurrentQuestionIndex((prevIndex) => prevIndex - 1); // Move to the previous question.
+  }
+};
+
 
   const emojis = ["😀", "😊", "😐", "😟", "😱", "🔥"];
   const currentEmoji = emojis[Math.floor(timeLeft / 10)];

@@ -1,0 +1,102 @@
+[
+    {
+      "question": "What does 'HTTP' stand for in web technology?",
+      "options": ["A: HyperText Transfer Protocol", "B: High-Level Text Transfer Protocol", "C: HyperText Transmission Protocol", "D: Hyperlink Text Transfer Protocol"],
+      "correctAnswer": "A: HyperText Transfer Protocol"
+    },
+    {
+      "question": "Which programming language is primarily used for Android app development?",
+      "options": ["A: Swift", "B: Kotlin", "C: Python", "D: JavaScript"],
+      "correctAnswer": "B: Kotlin"
+    },
+    {
+      "question": "What is the main purpose of a firewall in network security?",
+      "options": ["A: To block all incoming traffic", "B: To monitor and control incoming and outgoing traffic", "C: To encrypt data", "D: To speed up internet connections"],
+      "correctAnswer": "B: To monitor and control incoming and outgoing traffic"
+    },
+    {
+      "question": "Which of the following is a NoSQL database?",
+      "options": ["A: MySQL", "B: PostgreSQL", "C: MongoDB", "D: SQLite"],
+      "correctAnswer": "C: MongoDB"
+    },
+    {
+      "question": "What does 'API' stand for in software development?",
+      "options": ["A: Application Programming Interface", "B: Advanced Programming Interface", "C: Application Protocol Interface", "D: Automated Programming Interface"],
+      "correctAnswer": "A: Application Programming Interface"
+    },
+    {
+      "question": "Which company developed the Python programming language?",
+      "options": ["A: Google", "B: Microsoft", "C: Guido van Rossum", "D: Apple"],
+      "correctAnswer": "C: Guido van Rossum"
+    },
+    {
+      "question": "What is the primary function of a CDN (Content Delivery Network)?",
+      "options": ["A: To store backups of websites", "B: To deliver content faster to users based on their geographic location", "C: To encrypt website traffic", "D: To block malicious traffic"],
+      "correctAnswer": "B: To deliver content faster to users based on their geographic location"
+    },
+    {
+      "question": "Which protocol is used for secure communication over a computer network?",
+      "options": ["A: HTTP", "B: FTP", "C: SSL/TLS", "D: SMTP"],
+      "correctAnswer": "C: SSL/TLS"
+    },
+    {
+      "question": "What is the purpose of version control systems like Git?",
+      "options": ["A: To manage database schemas", "B: To track changes in source code and collaborate", "C: To automate software testing", "D: To deploy applications"],
+      "correctAnswer": "B: To track changes in source code and collaborate"
+    },
+    {
+      "question": "Which of the following is a cloud computing service provided by Amazon?",
+      "options": ["A: Azure", "B: Google Cloud", "C: AWS", "D: IBM Cloud"],
+      "correctAnswer": "C: AWS"
+    },
+    {
+      "question": "What is the primary use of Docker in software development?",
+      "options": ["A: To create virtual machines", "B: To containerize applications for consistent deployment", "C: To write code", "D: To manage databases"],
+      "correctAnswer": "B: To containerize applications for consistent deployment"
+    },
+    {
+      "question": "Which of the following is a front-end web development framework?",
+      "options": ["A: Django", "B: Flask", "C: React", "D: Node.js"],
+      "correctAnswer": "C: React"
+    },
+    {
+      "question": "What does 'IDE' stand for in software development?",
+      "options": ["A: Integrated Development Environment", "B: Interactive Development Environment", "C: International Development Environment", "D: Integrated Deployment Environment"],
+      "correctAnswer": "A: Integrated Development Environment"
+    },
+    {
+      "question": "Which of the following is a scripting language used for web development?",
+      "options": ["A: Java", "B: C++", "C: PHP", "D: Go"],
+      "correctAnswer": "C: PHP"
+    },
+    {
+      "question": "What is the purpose of a VPN (Virtual Private Network)?",
+      "options": ["A: To increase internet speed", "B: To encrypt internet traffic and provide anonymity", "C: To block ads", "D: To host websites"],
+      "correctAnswer": "B: To encrypt internet traffic and provide anonymity"
+    },
+    {
+      "question": "Which of the following is a machine learning framework?",
+      "options": ["A: TensorFlow", "B: Apache Kafka", "C: Kubernetes", "D: Docker"],
+      "correctAnswer": "A: TensorFlow"
+    },
+    {
+      "question": "What is the primary function of a DNS (Domain Name System)?",
+      "options": ["A: To store website data", "B: To translate domain names into IP addresses", "C: To encrypt website traffic", "D: To block malicious websites"],
+      "correctAnswer": "B: To translate domain names into IP addresses"
+    },
+    {
+      "question": "Which of the following is a popular JavaScript runtime environment?",
+      "options": ["A: Django", "B: Flask", "C: Node.js", "D: Ruby on Rails"],
+      "correctAnswer": "C: Node.js"
+    },
+    {
+      "question": "What is the purpose of a load balancer in web infrastructure?",
+      "options": ["A: To distribute traffic across multiple servers", "B: To block malicious traffic", "C: To store website backups", "D: To encrypt data"],
+      "correctAnswer": "A: To distribute traffic across multiple servers"
+    },
+    {
+      "question": "Which of the following is a version control platform?",
+      "options": ["A: GitHub", "B: Jenkins", "C: Docker", "D: Kubernetes"],
+      "correctAnswer": "A: GitHub"
+    }
+  ]

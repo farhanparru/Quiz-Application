@@ -49,7 +49,7 @@ const Navbar = () => {
 };
 
 const menuItems = [
-  { text: 'Technical Support', link: '#technical-support', icon: <FaHandsHelping /> },
+  { text: 'Technical Support', link: '/techniqalSupport', icon: <FaHandsHelping /> },
   { text: 'Quit Quiz', link: '#quit-quiz', icon: <FaDoorOpen /> },
   { text: 'Terms & Conditions', link: '#terms', icon: <FaFileContract /> },
   { text: 'Privacy Policy', link: '#privacy-policy', icon: <FaShieldAlt /> },
