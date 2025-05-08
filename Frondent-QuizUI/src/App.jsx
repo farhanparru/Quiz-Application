@@ -13,6 +13,7 @@ import Question from './components/Questions/Question';
 import QuestonCash from  './components/Questions/QuestonCash'
 import Navbar from './components/Questions/Navabar';
 import Techniqal from './components/Techniqalsupport/Support'
+import LiveChatsupport from './components/Techniqalsupport/LiveChatsupport';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/Normalsign' element={<NormalQuizSignup/>} />
         <Route path='/QuestionPage' element={<Question/>}/>
         <Route path='/CashQueston' element={<QuestonCash/>}/>
+        <Route path='/LiveChat' element={<LiveChatsupport/>}/>
         <Route path='/Signup' element={<Signup/>}/>
       </Routes>    
     </Router>

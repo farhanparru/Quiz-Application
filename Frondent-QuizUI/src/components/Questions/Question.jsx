@@ -63,7 +63,7 @@ const handlePrevQuestion = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-blue-900 to-black text-white">
-      {/* Navigation Buttons */}
+      
           <div className="flex justify-end p-4 space-x-4">
             <button
               onClick={handlePrevQuestion}
