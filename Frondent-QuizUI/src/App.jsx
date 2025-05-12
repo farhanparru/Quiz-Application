@@ -14,11 +14,13 @@ import QuestonCash from  './components/Questions/QuestonCash'
 import Navbar from './components/Questions/Navabar';
 import Techniqal from './components/Techniqalsupport/Support'
 import LiveChatsupport from './components/Techniqalsupport/LiveChatsupport';
+import Footer from './components/Quiz/Footer';
 
 function App() {
   return (
     <Router>
     <Navbar/>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/play/CashPrize/Instruction" element={<Quizinstrection/>}/>
@@ -32,7 +34,8 @@ function App() {
         <Route path='/CashQueston' element={<QuestonCash/>}/>
         <Route path='/LiveChat' element={<LiveChatsupport/>}/>
         <Route path='/Signup' element={<Signup/>}/>
-      </Routes>    
+      </Routes>  
+          <Footer/>  
     </Router>
   );
 }
