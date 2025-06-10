@@ -15,6 +15,7 @@ import Navbar from './components/Questions/Navabar';
 import Techniqal from './components/Techniqalsupport/Support'
 import LiveChatsupport from './components/Techniqalsupport/LiveChatsupport';
 import Footer from './components/Quiz/Footer';
+import Terms from './components/TermsConditions/Terms';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/play/CashPrize/Instruction" element={<Quizinstrection/>}/>
         <Route path='/play/NormalQuiz/Instruction' element={<Normal/>}/>
         <Route path='/Login' element={<LoginPage/>}/>
+        <Route path='/Termscondition' element={<Terms/>}/>
         <Route path='/techniqalSupport' element={<Techniqal/>}/>
         <Route path='/NormalQuizlogin' element={<NormalQuiz/>}/>
         <Route path='/Payment/cash' element={<QuizPaymnet/>}/>
